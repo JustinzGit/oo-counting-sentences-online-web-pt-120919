@@ -16,6 +16,6 @@ class String
 
   def count_sentences
     sentences = self.split(/[.!?]/)
-    sentences.count {|sentence| if sentence
+    sentences.count {|sentence| sentence != ""}
   end
 end
